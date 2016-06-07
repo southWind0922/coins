@@ -63,7 +63,6 @@ $(function() {
 
 			}
 			else{
-				alert('请选择左右盘');
 				return false;
 			}
 			
