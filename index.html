@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>硬币游戏</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="js/jquery-1.12.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="balance">
+				<div class="balanceimg">
+					<img src="img/equal.png" id='balanceimgequal' />
+					<img src="img/left.png" id='balanceimgleft' />
+					<img src="img/right.png" id='balanceimgright' />
+				</div>
+				<div class="radio">
+					<ul>
+						<li><input type="radio" name="bal" id="radioleft" />天平左盘</li>
+						<li><input type="radio" name="bal" id="radioright" />天平右盘</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="coins">
+				<div class="record">
+					<img src="img/record.png" />
+					<div class="leftbar">
+						<ul>
+							<li id='firstleft'></li>
+							<li id='secondleft'></li>
+							<li id='thirdleft'></li>
+						</ul>
+					</div>
+					<div class="iconbar">
+						<ul>
+							<li id='firsticon'></li>
+							<li id='secondicon'></li>
+							<li id='thirdicon'></li>
+						</ul>
+					</div>
+					<div class="rightbar">
+						<ul>
+							<li id='firstright'></li>
+							<li id='secondright'></li>
+							<li id='thirdright'></li>
+						</ul>
+					</div>
+				</div>
+				<div class="coin">
+
+				</div>
+				<div class="button">
+					<ul>
+						<li id='measure'>称重</li>
+						<li id='balclear'>清空托盘</li>
+						<li id='select'>挑出硬币</li>
+						<li id='reset'>重新开始</li>
+					</ul>
+				</div>
+			</div>
+			<div class="gameover" id='overanimate'>
+				<div class="overcontainer">
+					<img src="img/equal.png" id='equal' />
+					<img src="img/left.png" id='left' />
+					<div class="treasurecontainer">
+						<img src="img/treasure.png" />
+					</div>
+					<div class="coincontainer">
+						<img src="img/finishcoin.png" />
+						<img src="img/finishcoin.png" />
+						<img src="img/finishcoin.png" />
+						<img src="img/finishcoin.png" />
+						<img src="img/finishcoin.png" />
+						<img src="img/finishcoin.png" />
+						<img src="img/finishcoin.png" />
+						<img src="img/finishcoin.png" />
+					</div>
+				</div>
+			</div>
+			<div class="gameover" id='overselect'>
+					<div class="overcoin">
+					
+				   </div>
+			</div>
+		</div>
+
+	</body>
+
+</html>
