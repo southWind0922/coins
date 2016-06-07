@@ -43,6 +43,7 @@ $(function() {
 					$('#thirdleft').append(oNum + 1);
 					oLeftArray.push(oCoin[oNum]);
 				}
+				$(this).hide('slow');
 
 			}
 			if ($(":radio:checked").attr("id") == "radioright") {
@@ -58,10 +59,14 @@ $(function() {
 					$('#thirdright').append(oNum + 1);
 					oRightArray.push(oCoin[oNum]);
 				}
+				$(this).hide('slow');
 
 			}
-			else{return false;}
-			$(this).hide('slow');
+			else{
+				alert('请选择左右盘');
+				return false;
+			}
+			
 
 		})
 	}
