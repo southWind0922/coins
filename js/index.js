@@ -30,7 +30,6 @@ $(function() {
 	function setcoin() {
 		$(".coin img").click(function() {
 			var oNum = $(this).index();
-			$(this).hide('slow');
 			if ($(":radio:checked").attr("id") == "radioleft") {
 				if (oTimes == 1) {
 					$('#firstleft').append(oNum + 1);
@@ -61,6 +60,8 @@ $(function() {
 				}
 
 			}
+			else{return false;}
+			$(this).hide('slow');
 
 		})
 	}
